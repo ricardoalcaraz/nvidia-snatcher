@@ -1,0 +1,6 @@
+version: "3.7"
+services:
+  nvidia-snatcher:
+    build:
+      context: .
+    restart: "unless-stopped"
