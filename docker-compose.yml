@@ -1,6 +1,16 @@
 version: "3.7"
 services:
-  nvidia-snatcher:
+  nvidia-snatcher-3090:
     build:
       context: .
     restart: "unless-stopped"
+    environment:
+      - DISCORD_WEB_HOOK=${DISCORD_3090_WEB_HOOK}
+      - SHOW_ONLY_SERIES=3090
+  nvidia-snatcher-3080:
+    build:
+      context: .
+    restart: "unless-stopped"
+    environment:
+      - DISCORD_WEB_HOOK=${DISCORD_3080_WEB_HOOK}
+      - SHOW_ONLY_SERIES=3080
