@@ -28,7 +28,7 @@ export async function usingResponse<T>(
 export async function usingPage<T>(browser: Browser, cb: (page: Page, browser: Browser) => Promise<T>): Promise<T> {
 	const page = await browser.newPage();
 	page.setDefaultNavigationTimeout(Config.page.navigationTimeout);
-	await page.setUserAgent(Config.page.userAgent);
+	await page.setUserAgent(Math.random() < 0.5 ? Config.page.userAgent : "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:82.0) Gecko/20100101 Firefox/82.0");
 
 	try {
 		return await cb(page, browser);
