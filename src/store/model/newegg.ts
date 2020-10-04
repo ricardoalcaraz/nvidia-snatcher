@@ -7,8 +7,12 @@ export const Newegg: Store = {
 			text: ['are you a human?']
 		},
 		inStock: {
-			container: '#landingpage-cart .btn-primary span',
+			container: 'div#ProductBuy .btn-primary',
 			text: ['add to cart']
+		},
+		maxPrice: {
+			container: 'div#app div.product-price > ul > li.price-current > strong',
+			euroFormat: false
 		}
 	},
 	links: [
@@ -95,6 +99,13 @@ export const Newegg: Store = {
 			model: 'eagle oc',
 			series: '3080',
 			url: 'https://www.newegg.com/gigabyte-geforce-rtx-3080-gv-n3080eagle-oc-10gd/p/N82E16814932330'
+		},
+		{
+			brand: 'gigabyte',
+			cartUrl: 'https://secure.newegg.com/Shopping/AddtoCart.aspx?Submit=ADD&ItemList=N82E16814932336',
+			model: 'aorus master',
+			series: '3080',
+			url: 'https://www.newegg.com/gigabyte-geforce-rtx-3080-gv-n3080aorus-m-10gd/p/N82E16814932336'
 		},
 		{
 			brand: 'zotac',

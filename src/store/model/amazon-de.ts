@@ -9,6 +9,10 @@ export const AmazonDe: Store = {
 		inStock: {
 			container: '#desktop_buybox',
 			text: ['in den einkaufswagen']
+		},
+		maxPrice: {
+			container: 'span[class*="PriceString"]',
+			euroFormat: true
 		}
 	},
 	links: [
@@ -81,6 +85,12 @@ export const AmazonDe: Store = {
 		{
 			brand: 'asus',
 			model: 'tuf',
+			series: '3080',
+			url: 'https://www.amazon.de/dp/B08HN37VQK'
+		},
+		{
+			brand: 'asus',
+			model: 'tuf oc',
 			series: '3080',
 			url: 'https://www.amazon.de/dp/B08HN4DSTC'
 		},
